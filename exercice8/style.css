@@ -1,0 +1,12 @@
+/* Wrap + tailles minimales pour 4 → 2×2 → 1×4 */
+#widgets{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.widget{
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

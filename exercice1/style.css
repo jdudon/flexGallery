@@ -1,0 +1,6 @@
+/* Ex1: Toolbar (utiliser display:flex, gap, .spacer flex:1) */
+.toolbar input#search {
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercice 5 — Filtres (chips) redesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <h1>Exercice 5 — Groupe de filtres (chips)</h1>
+  <p class="muted">Objectif : créer un groupe de chips responsives (wrap), avec états actif/inactif et focus accessibles.</p>
+
+  <section class="card" aria-labelledby="filters-title">
+    <div class="row between align-center header">
+      <h2 id="filters-title" style="margin:0">Filtres</h2>
+      <a class="btn text" href="#" role="button">
+        <span class="material-icons" aria-hidden="true">restart_alt</span>
+        Effacer
+      </a>
+    </div>
+
+    <!-- TODO: faites revenir les chips à la ligne proprement, avec un espacement régulier et des états actifs -->
+    <div id="chips" class="row wrap">
+      <button class="chip" aria-pressed="true"><span class="material-icons">label</span>Toutes</button>
+      <button class="chip"><span class="material-icons">palette</span>Design</button>
+      <button class="chip"><span class="material-icons">code</span>Code</button>
+      <button class="chip"><span class="material-icons">science</span>Lab</button>
+      <button class="chip"><span class="material-icons">photo</span>Photos</button>
+      <button class="chip"><span class="material-icons">movie</span>Vidéos</button>
+      <button class="chip"><span class="material-icons">music_note</span>Audio</button>
+      <button class="chip"><span class="material-icons">brush</span>Illustrations</button>
+      <button class="chip"><span class="material-icons">description</span>Docs</button>
+    </div>
+  </section>
+</main>
+</body>
+</html>

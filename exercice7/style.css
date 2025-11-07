@@ -1,0 +1,40 @@
+/* 2 panneaux avec espace régulier */
+.split {
+    display: flex;
+    gap: var(--gap);
+}
+/* Panneaux de même importance + hauteur mini */
+.panel {
+    flex: 1;
+    min-height: 60vh;
+}
+/* Panneau gauche: colonne centrée, spacing confortable */
+.promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    text-align: left;
+}
+.promo-icon {
+    font-size: 64px;
+    color: var(--primary);
+}
+/* Panneau droit: largeur lisible, centré verticalement */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    max-width: 520px;
+    width: 100%;
+}
+@media (max-width: 720px) {
+    .split {
+        flex-direction: column;
+    }
+    .form {
+        max-width: none;
+        margin-left: 0;
+    }
+}

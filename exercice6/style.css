@@ -1,0 +1,22 @@
+/* Conteneur centré et responsive */
+#pricing{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+/* Cartes pricing fluides */
+.plan{
+  flex: 1 1 240px;
+  max-width: 320px;
+  text-align: center;
+}
+/* Mise en avant de la carte Pro */
+.plan.featured{
+  border: 2px solid rgba(41,98,255,.2);
+  box-shadow: var(--shadow);
+}
+@media (max-width: 720px){
+  #pricing{ justify-content: stretch; }
+  .plan{ max-width: none; }
+}

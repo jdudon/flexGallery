@@ -1,0 +1,8 @@
+/* Centrer la rangée horizontalement et verticalement, sans wrap */
+#btn-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  flex-wrap: nowrap;
+}

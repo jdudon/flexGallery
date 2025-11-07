@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercice 7</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <h1>Exercice 7</h1>
+  
+<div class="split row vh-60">
+  <!-- Panneau gauche: Présentation/Inscription (CTA) -->
+  <section class="card panel promo" aria-labelledby="promo-title">
+    <span class="material-icons promo-icon" aria-hidden="true">lock</span>
+    <h2 id="promo-title">Nouveau ici ?</h2>
+    <p class="muted">Rejoignez la communauté et commencez gratuitement.</p>
+    <a class="btn tonal" href="#" role="button">
+      <span class="material-icons" aria-hidden="true">person_add</span>
+      Créer un compte
+    </a>
+  </section>
+
+  <!-- Panneau droit: Formulaire de connexion -->
+  <section class="card panel form" aria-labelledby="login-title">
+    <h2 id="login-title">Connexion</h2>
+    <label for="email" class="muted">Email</label>
+    <input id="email" placeholder="email@exemple.com"
+           style="width:100%; padding:12px; border-radius:12px; border:1px solid #e5e7eb; margin-bottom:8px">
+    <label for="password" class="muted">Mot de passe</label>
+    <input id="password" type="password" placeholder="••••••••"
+           style="width:100%; padding:12px; border-radius:12px; border:1px solid #e5e7eb; margin-bottom:12px">
+    <a class="btn primary" href="#" role="button">Se connecter</a>
+  </section>
+</div>
+
+</main>
+</body>
+</html>

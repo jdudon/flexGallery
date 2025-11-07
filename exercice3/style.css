@@ -1,0 +1,16 @@
+/* Cards responsives: 4 → 2 → 1 selon largeur */
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+#gallery .card{
+  flex: 1 1 220px; /* base minimale */
+}
+/* Actions alignées à droite dans chaque card */
+#gallery .row#actions{
+  margin-top: 8px;
+  display: flex;
+  gap: var(--gap);
+  justify-content: flex-end;
+}

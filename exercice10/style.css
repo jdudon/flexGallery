@@ -1,0 +1,14 @@
+/* 4 colonnes en ligne + wrap ; sur mobile → pile */
+#site-footer .top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+#site-footer .top > .col {
+  flex: 1 1 180px;
+}
+@media (max-width: 720px) {
+  #site-footer .top {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,17 @@
+/* 3 colonnes égales, empilement de cards */
+#kanban {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    align-items: flex-start;
+}
+.lane {
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+/* Les cartes internes prennent toute la largeur de la colonne */
+.lane > .card {
+    width: 100%;
+}
