@@ -5,12 +5,14 @@ Objectif : construire une barre d’outils.
 - Placez le titre à gauche, un champ de recherche qui s’étire au centre, et trois actions à droite (text/tonal/primary).
 - Utilisez un élément « espaceur » qui pousse les actions à droite (ex: `.spacer` avec `flex:1`).
 - Gérez l’espacement avec `gap`. Le tout tient sur une ligne.
+![exo1](/assets/exo1.png)
 
 ### Exercise 01 — EN
 Goal: build a toolbar.
 - Put the title on the left, a search field that grows in the middle, and three actions on the right (text/tonal/primary).
 - Use a spacer element to push actions to the right (`flex:1`).
 - Use `gap` for spacing. Everything on a single line.
+![exo1](/assets/exo1.png)
 
 
 ### Exercice 02 VF
@@ -18,12 +20,14 @@ Objectif : centrer une rangée de boutons.
 - Alignez verticalement et horizontalement les boutons.
 - Empêchez le retour à la ligne (pas de wrap).
 - Conservez un espacement régulier entre boutons.
+![exo1](/assets/exo2.png)
 
 ### Exercise 02 — EN
 Goal: center a row of buttons.
 - Align both vertically and horizontally.
 - Prevent wrapping (keep all buttons on one line).
 - Keep consistent spacing between buttons.
+![exo1](/assets/exo2.png)
 
 
 ### Exercice 03 VF
@@ -31,12 +35,14 @@ Objectif : créer une grille responsive.
 - Affichez 6–9 cartes : 4 par ligne en large, 2 en moyen, 1 en étroit.
 - Les cartes doivent avoir une base/largeur minimale et se réorganiser automatiquement (`flex-basis`, `flex-wrap`).
 - La rangée d’actions au sein de chaque carte est alignée à droite.
+![exo1](/assets/exo3.png)
 
 ### Exercise 03 — EN
 Goal: create a responsive card grid.
 - Show 6–9 cards: 4 per row on wide, 2 on medium, 1 on narrow.
 - Cards should have a minimum base/width and wrap (`flex-basis`, `flex-wrap`).
 - The action row inside each card is right-aligned.
+![exo1](/assets/exo3.png)
 
 
 ### Exercice 04 VF
@@ -44,12 +50,14 @@ Objectif : composer un item de liste média.
 - Chaque item a: image (gauche), textes (centre), actions (droite).
 - Les hauteurs d’items sont cohérentes quelles que soient les longueurs de texte.
 - Les actions restent alignées à droite.
+![exo1](/assets/exo4.png)
 
 ### Exercise 04 — EN
 Goal: compose a media list item.
 - Each item has: image (left), texts (center), actions (right).
 - Item heights remain consistent regardless of text length.
 - Actions stay aligned to the right.
+![exo1](/assets/exo4.png)
 
 
 ### Exercice 05 VF
@@ -57,12 +65,15 @@ Objectif : groupe de filtres (chips).
 - Les chips reviennent à la ligne proprement: utilisez le wrap avec espacement régulier entre lignes.
 - Les chips restent compacts et alignés sur plusieurs lignes.
 - Prévoyez un conteneur avec padding et coins arrondis.
+![exo1](/assets/exo5.png)
+
 
 ### Exercise 05 — EN
 Goal: filter chips group.
 - Chips should wrap neatly with consistent spacing between rows.
 - Chips remain compact and aligned across multiple lines.
 - Use a padded, rounded container.
+![exo1](/assets/exo5.png)
 
 
 ### Exercice 06 VF
@@ -70,38 +81,47 @@ Objectif : section prix 3 colonnes.
 - Centrez le groupe et donnez une largeur fluide aux cartes.
 - Mettez en avant la carte du milieu (élévation/bordure).
 - Sur mobile: passez en une seule colonne (ordre conservé).
+![exo1](/assets/exo6.png)
 
 ### Exercise 06 — EN
 Goal: 3-column pricing section.
 - Center the group; give cards fluid width.
 - Emphasize the middle card (elevation/border).
 - On mobile: switch to a single column (keep order).
+![exo1](/assets/exo6.png)
 
 
 ### Exercice 07 VF
-Objectif : layout « split login ».
-- Deux panneaux de même importance: un visuel et un formulaire.
-- Les panneaux remplissent la hauteur visible (au moins 60vh).
-- Sur mobile: basculez en colonne (visuel au-dessus).
+Objectif : layout « split login » avec panneau de présentation/inscription.
+- Deux panneaux de même importance : **Présentation/Inscription** (gauche) et **Formulaire de connexion** (droite).
+- Le panneau gauche contient : un titre, un court texte et un **bouton d’inscription** avec icône (CTA).
+- Le panneau droit contient : email, mot de passe, et un bouton **Se connecter**.
+- Les deux panneaux doivent occuper chacun 50% en large (`flex:1`), avec une hauteur minimale de **60vh**.
+- **Responsive** : sur mobile, passer en colonne (panneau Présentation au-dessus du formulaire).
+![exo1](/assets/exo7.png)
 
 ### Exercise 07 — EN
-Goal: split login layout.
-- Two equally important panels: a visual and a form.
-- Panels fill the visible height (at least 60vh).
-- On mobile: stack vertically (visual above).
-
+Goal: split login layout with a presentation/sign‑up panel.
+- Two equally important panels: **Presentation/Sign‑up** (left) and **Login form** (right).
+- Left panel includes: a heading, a short paragraph, and a **sign‑up CTA button** with an icon.
+- Right panel includes: email, password, and a **Sign in** button.
+- Both panels should take 50% width on large screens (`flex:1`), with a minimum height of **60vh**.
+- **Responsive**: on mobile, stack vertically (Presentation above the form).
+![exo1](/assets/exo7.png)
 
 ### Exercice 08 VF
 Objectif : rangée de widgets de dashboard.
 - 4 petites cartes qui se réorganisent selon la largeur (4 → 2×2 → 1×4).
 - Alignez et étirez correctement pour des hauteurs homogènes.
 - Conservez un espacement régulier entre tous les widgets.
+![exo1](/assets/exo8.png)
 
 ### Exercise 08 — EN
 Goal: dashboard widget row.
 - 4 small cards that reflow with screen width (4 → 2×2 → 1×4).
 - Align and stretch properly for uniform heights.
 - Keep consistent spacing between all widgets.
+![exo1](/assets/exo8.png)
 
 
 ### Exercice 09 VF
@@ -109,25 +129,29 @@ Objectif : mini-Kanban 3 colonnes.
 - Trois colonnes de même largeur; chaque colonne empile des cartes.
 - Le conteneur s’adapte et garde des espacements constants.
 - Les titres de colonnes restent alignés en haut.
+![exo1](/assets/exo9.png)
 
 ### Exercise 09 — EN
 Goal: mini-Kanban with 3 columns.
 - Three equal-width columns; each stacks cards vertically.
 - The container adapts and keeps consistent spacing.
 - Column titles stay aligned to the top.
+![exo1](/assets/exo9.png)
 
 
-### Exercice 08 VF
+### Exercice 10 VF
 Objectif : footer multi-colonnes.
 - 4 colonnes en ligne; sur mobile, basculer en pile verticale.
 - Espacements internes réguliers; titres mis en valeur.
 - Bandeau inférieur: logo/titre à gauche, icônes à droite.
+![exo1](/assets/exo10.png)
 
-### Exercise 100 — EN
+### Exercise 10 — EN
 Goal: multi-column footer.
 - 4 columns in a row; on mobile, stack vertically.
 - Keep internal spacing consistent; emphasize headings.
 - Bottom bar: logo/title on the left, icons on the right.
+![exo1](/assets/exo10.png)
 
 # 📎 Annexes – Icônes, Polices, Couleurs & Variables CSS
 
